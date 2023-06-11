@@ -1,4 +1,8 @@
 <?php
+try {
+	// Check for any exceptions
+	// Error handler - abort request
+	
 	require_once $_SERVER['DOCUMENT_ROOT'].'\classes\NbpApiFetch.php';
 	require_once $_SERVER['DOCUMENT_ROOT'].'\classes\NbpApiDatabase.php';
 	require_once $_SERVER['DOCUMENT_ROOT'].'\classes\NbpExchangeTable.php';
@@ -7,11 +11,8 @@
 	require_once $_SERVER['DOCUMENT_ROOT'].'\classes\NbpHtmlForm.php';
 	require_once $_SERVER['DOCUMENT_ROOT'].'\functions\basicExceptions.php';
 	require_once $_SERVER['DOCUMENT_ROOT'].'\functions\errorHandler.php';
-
-// Check for any exceptions
-/*try {
-	// Error handler - abort request
-	set_error_handler('errorHandler500', E_ALL);*/
+	
+	set_error_handler('errorHandler500', E_ALL);
 	
 	// Create objects
 	$fetcher = new NbpApiFetch();
@@ -108,13 +109,13 @@
 	
 	$conversionsHtml = NbpConversion::toHtml($database, $conversions);
 	
-/*}
+}
 catch(Throwable $e) {
 // If any throwable arrived, abort request
 	http_response_code(500);
 	echo 'Internal Server Error 500';
 	die();
-}*/
+}
 ?>
 
 <!DOCTYPE html>

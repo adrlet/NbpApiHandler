@@ -1,0 +1,92 @@
+
+.NbpExchangeTable {
+	margin-bottom: 20px;
+}
+
+.NbpExchangeTable > p {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+}
+
+.NbpExchangeTable > ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.NbpExchangeTable > ul > li {
+	flex: 0 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-width: 10%;
+	border: black 1px solid;
+	margin: 10px;
+	padding: 5px;
+}
+
+.NbpExchangeTable > ul > li > div {
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}
+
+.NbpExchangeTable > ul > li > div.code {
+	font-weight: bold;
+}
+
+.NbpHtmlForm {
+	margin-bottom: 20px;
+}
+
+.NbpHtmlForm > p {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 18;
+}
+
+.NbpHtmlForm > form {
+	margin-left: 20px;
+}
+
+.NbpHtmlForm > form > label.pointer {
+	margin-top: 10px;
+	display: block;
+}
+
+.NbpHtmlForm > form > label.error {
+	padding-left: 5px;
+	color: red;
+}
+
+.NbpHtmlForm > form > input.submit {
+	display: block;
+	margin: 10px 0;
+}
+
+.NbpConversion {
+	margin-bottom: 20px;
+}
+
+.NbpConversion > p {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 18;
+}
+
+.NbpConversion > ul {
+	margin: 0 20px 0 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.NbpConversion > ul > li {
+	margin: 10px;
+}
+
+.NbpConversion > ul > li > div {
+	margin: 5px;
+}

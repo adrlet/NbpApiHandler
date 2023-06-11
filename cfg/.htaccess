@@ -1,0 +1,4 @@
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteBase /
+RewriteRule ^([^.]*)$ /index.php
